@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "106.LCD",
+			"path": "106.LCD"
+		},
+		{
+			"name": "107.Sprite",
+			"path": "107.Sprite"
+		},
+		{
+			"name": "109.Buzzes_Tones",
+			"path": "109.Buzzes_Tones"
+		},
+		{
+			"name": "111.Song",
+			"path": "111.Song"
+		},
+		{
+			"name": "Jukebox",
+			"path": "Jukebox"
+		}
+	],
+	"settings": {}
+}
