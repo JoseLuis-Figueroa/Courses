@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"name": "155.ThingsSpeak",
+			"path": "155.ThingsSpeak"
+		},
+		{
+			"name": "156.Temperature_Logger",
+			"path": "156.Temperature_Logger"
+		},
+		{
+			"name": "158.Retrieving_Data",
+			"path": "158.Retrieving_Data"
+		},
+		{
+			"name": "159.Clear_channel",
+			"path": "159.Clear_channel"
+		},
+		{
+			"name": "164.Request_IFTTT",
+			"path": "164.Request_IFTTT"
+		},
+		{
+			"name": "165.Passing_Arguments",
+			"path": "165.Passing_Arguments"
+		},
+		{
+			"name": "166.IoT_Button",
+			"path": "166.IoT_Button"
+		},
+		{
+			"name": "169.Light",
+			"path": "169.Light"
+		}
+	],
+	"settings": {}
+}

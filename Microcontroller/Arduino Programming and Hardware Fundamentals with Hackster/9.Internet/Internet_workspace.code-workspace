@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "143.UART"
+		},
+		{
+			"name": "146.ConnectingWIFI",
+			"path": "146.ConnectingWIFI"
+		},
+		{
+			"name": "147.Print_IP_Address",
+			"path": "147.Print_IP_Address"
+		},
+		{
+			"name": "150.Print_Part_Web",
+			"path": "150.Print_Part_Web"
+		},
+		{
+			"name": "153.Local_weather",
+			"path": "153.Local_weather"
+		}
+	],
+	"settings": {}
+}

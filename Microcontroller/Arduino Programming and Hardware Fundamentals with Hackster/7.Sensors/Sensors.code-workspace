@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "114.Light_Sensor"
+		},
+		{
+			"name": "115.Night_Light",
+			"path": "115.Night_Light"
+		},
+		{
+			"name": "117.Temperature_Sensor",
+			"path": "117.Temperature_Sensor"
+		},
+		{
+			"name": "118.Thermometer",
+			"path": "118.Thermometer"
+		},
+		{
+			"name": "120.Ultrasonic_Sensor",
+			"path": "120.Ultrasonic_Sensor"
+		},
+		{
+			"name": "121.Digital_Theremin",
+			"path": "121.Digital_Theremin"
+		},
+		{
+			"name": "123.Accelerometer",
+			"path": "123.Accelerometer"
+		},
+		{
+			"name": "124.Accelerometer_Challenge",
+			"path": "124.Accelerometer_Challenge"
+		},
+		{
+			"name": "126.Burglar_Alarm",
+			"path": "126.Burglar_Alarm"
+		}
+	],
+	"settings": {}
+}
