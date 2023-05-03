@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "128.Transistor"
+		},
+		{
+			"name": "131.DC_motor",
+			"path": "131.DC_motor"
+		},
+		{
+			"name": "132.Speed_controller",
+			"path": "132.Speed_controller"
+		},
+		{
+			"name": "134.H_Brigde",
+			"path": "134.H_Brigde"
+		},
+		{
+			"name": "135.Two_Motors",
+			"path": "135.Two_Motors"
+		},
+		{
+			"name": "137.Servo",
+			"path": "137.Servo"
+		},
+		{
+			"name": "138.Light_gauge",
+			"path": "138.Light_gauge"
+		}
+	],
+	"settings": {}
+}
