@@ -1,8 +1,16 @@
 # Arduino Programming and Hardware Fundamentals with Hackster.
 
-This folder contains all the Arduino codes performed during the course. The course codes are divided:
-- Host: Contain the codes on language C using on the PC.
-- Target: Contain the codes on embedded C using on the development board.
+This folder contains all the Arduino codes performed during the course. The course is divided into the following sections:
+- Introductions.
+- Programming Basics.
+- Electrical Engineering Basics.
+- Fun with LEDs.
+- User Input.
+- Feedback.
+- Sensor.
+- Robotics.
+- The Internet.
+- Internet of Things (IoT).
  
 Notes: 
 - The codes before 107.sprint were performed using the Microsoft Arduino Extension. 
