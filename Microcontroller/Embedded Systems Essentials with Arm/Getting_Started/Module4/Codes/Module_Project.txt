@@ -1,0 +1,202 @@
+#include "mbed.h"
+
+// Assignment pins
+#define BUTTON_ADULT p5
+#define BUTTON_CHILD p6 
+#define BUTTON_ALARM p7 
+
+#define NO_ENTRY p8
+#define BARBER1 p9
+#define BARBER2 p10
+#define BARBER3 p11
+#define WALL_CLOCK p12
+#define SEAT1 p13
+#define SEAT2 p14
+#define SEAT3 p15
+#define SEAT4 p16
+#define SEAT5 p17
+#define SEAT6 p18
+#define SEAT7 p19
+#define SEAT8 p20
+
+
+// Interrupt instances
+InterruptIn button_adult(BUTTON_ADULT);
+InterruptIn button_child(BUTTON_CHILD);
+InterruptIn button_alarm(BUTTON_ALARM);
+// Output instances
+DigitalOut no_entry(NO_ENTRY);
+DigitalOut barber1(BARBER1);
+DigitalOut barber2(BARBER2);
+DigitalOut barber3(BARBER3);
+DigitalOut wall_clock(WALL_CLOCK);
+BusOut seats_displays(SEAT1, SEAT2, SEAT3, SEAT4, SEAT5, SEAT6, SEAT7, SEAT8);
+
+// Define variables
+volatile unsigned int time_count_adult1 = 12;
+volatile unsigned int time_count_adult2 = 12;
+volatile unsigned int time_count_child = 12;
+volatile unsigned int seats = 0;
+volatile unsigned int adult_waiting = 0;
+volatile unsigned int child_waiting = 0;
+
+// Define function
+void update_displays(unsigned int seats);
+
+// Define ISR for the interruption
+void button_adult_handler()
+{
+    if(seats<8)
+    {
+        adult_waiting++; 
+        seats++;
+    }
+    else
+    {
+        no_entry = 1;
+    }
+}
+
+void button_child_handler()
+{
+    if(seats<7)
+    {
+        child_waiting++; 
+        seats++;
+        seats++;
+    }
+    else
+    {
+        no_entry = 1;
+    }
+}
+
+void button_alarm_handler()
+{
+    barber1 = barber2 = barber3 = 0;
+    seat1 = seat2 = seat3 = seat4 = seat5 = seat6 = seat7 = seat8 = 0;
+    no_entry = 1;
+}
+
+
+int main() {
+    
+    // Interrupt handler
+    button_adult.rise(&button_adult_handler);
+    button_child.rise(&button_child_handler);
+    button_alarm.rise(&button_child_handler);
+    
+    while (1) 
+    {
+        wait_ms(0.1);
+        // Barber 1
+        if(barber1 == 1)
+        {
+            time_count_adult1--;
+            if(time_count_adult1 == 0)
+            {
+                barber1 = 0;
+                no_entry = 0;
+            }
+        }
+        else
+        {
+            if(adult_waiting >= 1)
+            {
+                barber1 = 1;
+                time_count_adult1 = 12;
+                adult_waiting--;
+                seats--;
+            }
+        }
+        // Barber 2
+        if(barber2 == 1)
+        {
+            time_count_adult2--;
+            if(time_count_adult2 == 0)
+            {
+                barber2 = 0;
+                no_entry = 0;
+            }
+        }
+        else
+        {
+            if(adult_waiting >= 1)
+            {
+                barber2 = 1;
+                time_count_adult2 =12;
+                adult_waiting--;
+                seats--;
+            }
+        }
+        // Barber 3 (child)
+        if(barber3 == 1)
+        {
+            time_count_child--;
+            if(time_count_child == 0)
+            {
+                barber3 = 0;
+                seats--;
+                no_entry = 0;
+            }
+        }
+        else
+        {
+            if(child_waiting >= 1)
+            {
+                barber3 = 1;
+                time_count_child = 12;
+                child_waiting--;
+                seats--;
+            }
+            
+        }
+        // Update seating display
+        update_displays(seats);
+        // The wall clock ticks
+        wall_clock = !wall_clock;
+        wait_ms(1000);
+        
+    }
+}
+
+
+void update_displays(unsigned int seats)
+{
+    if(seats == 0)
+    {
+        seats_displays = 0b00000000;
+    }
+    else if(seats == 1)
+    {
+        seats_displays = 0b00000001;
+    }
+    else if(seats == 2)
+    {
+        seats_displays = 0b00000011;
+    }
+    else if(seats == 3)
+    {
+        seats_displays = 0b00000111;
+    }
+    else if(seats == 4)
+    {
+        seats_displays = 0b00001111;
+    }
+    else if(seats == 5)
+    {
+        seats_displays = 0b00011111;
+    }
+    else if(seats == 6)
+    {
+        seats_displays = 0b00111111;
+    }
+    else if(seats == 7)
+    {
+        seats_displays = 0b01111111;
+    }
+    else
+    {
+        seats_displays = 0b11111111;
+    }
+}

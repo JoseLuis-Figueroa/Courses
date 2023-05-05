@@ -1,0 +1,75 @@
+#include "mbed.h"
+
+// Input pins
+#define BTN_START p5 //start = 1
+#define SNR_GUARD p6 //guard closed = 1
+#define SNR_TEMPE p7 //exceed temperature = 1
+#define BTN_STOP p8  //stop = 1
+// Output pins
+#define LED_READY p9
+#define LED_RUNNING p10
+#define LED_FAULT p11
+#define LED_EXCES p12
+
+// Define the input pins
+DigitalIn start(BTN_START);
+DigitalIn guard(SNR_GUARD);
+DigitalIn temperature(SNR_TEMPE);
+DigitalIn stop(BTN_STOP);
+// Define the output pins
+DigitalOut ready(LED_READY);
+DigitalOut running(LED_RUNNING);
+DigitalOut fault(SNR_TEMPE);
+DigitalOut exceed(LED_EXCES);
+
+
+int main() 
+{
+    while (1) 
+    {
+        // If guard is open or temperature is exceeding
+        while((guard == 0) || (temperature == 1))
+        {
+            running = fault = exceed = 0;
+            ready = !ready;
+            wait(0.2);
+        }
+        
+        // Motor is ready
+        ready = 1;
+        // Waiting the start button
+        while (start == 0)
+        {
+            wait(0.01);
+        }
+        
+        // Motor running (until a failure is detected)
+        while((guard==1)&&(temperature==0)&&(stop==0))
+        {
+            ready = 0;
+            running = 1;
+            wait(0.2);
+        }
+        
+        //If motor stops (failure conditions)
+        if (guard == 0)
+        {
+            running = 0;
+            fault = 1;
+            wait(0.5);
+            fault = 0;
+        }
+        if (temperature == 1)
+        {
+            running = 0;
+            exceed = 1;
+            wait(0.5);
+            exceed = 0;
+        }
+        if (stop == 1)
+        {
+            running = 0;
+        }
+
+    }
+}

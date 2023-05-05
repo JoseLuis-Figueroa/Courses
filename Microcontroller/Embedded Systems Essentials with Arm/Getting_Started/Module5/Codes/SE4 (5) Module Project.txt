@@ -1,0 +1,102 @@
+#include "mbed.h"
+
+#define SPEAKER p21
+#define AIN1 p15
+#define AIN2 p16
+#define WHT_LED p13
+
+#define RED_LED p10
+#define BLU_LED p11
+#define YLW_LED p12
+
+
+// Define the PWM speaker output
+PwmOut speaker(SPEAKER);
+// Define analog inputs
+AnalogIn tempe_sensor(AIN1);
+AnalogIn level_sensor(AIN2);
+// Define outputs
+DigitalOut white(WHT_LED);
+DigitalOut red(RED_LED);
+DigitalOut blue(BLU_LED);
+DigitalOut yellow(YLW_LED);
+
+
+//Define variables
+float i;
+float temperature;
+float level;
+/*----------------------------------------------------------------------------
+ MAIN function
+ *----------------------------------------------------------------------------*/
+int main()
+{
+    while(1)
+    {
+        // Get the value of the sensors (ADC)
+        temperature = tempe_sensor.read();
+        level = level_sensor.read();
+        // Set speaker period to 500Hz
+        speaker.period(0.002);
+        
+        // Heating tank states
+        if (level > 0.75)
+        {
+            white = 0;
+            // Temperature too high
+            if(temperature > 0.66)
+            {
+                // Two tone
+                speaker = 0.25;
+                wait_ms(500);
+                speaker = 0;
+                wait_ms(500);
+                speaker = 0.25;
+                wait_ms(500);
+                speaker = 0;
+                wait_ms(500);
+                // Turn on and off leds
+                red = 1;
+                blue = 0;
+                yellow = 0;
+            }
+            // temperature is good
+            else if(temperature < 0.66 && temperature > 0.33)
+            {
+                // Steady continuous tone
+                speaker = 0.15;
+                // Turn on and off leds
+                red = 0;
+                blue = 1;
+                yellow = 0;
+            }
+            else
+            {
+                // Single beeping tone
+                speaker = 0.25;
+                wait_ms(1000);
+                speaker = 0;
+                wait_ms(1000);
+                // Turn on and off leds
+                red = 0;
+                blue = 0;
+                yellow = 1;
+            }
+        }
+        else
+        {
+            // Frequency-modulated warble
+            speaker = 0.15;
+            wait_ms(500);
+            speaker = 0;
+            wait_ms(500);
+            
+             // Turn on and off leds
+            red = 0;
+            blue = 0;
+            yellow = 0;
+            white != white;
+            wait_ms(500);
+        }
+    }
+}

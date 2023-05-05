@@ -1,0 +1,71 @@
+#include "mbed.h"
+
+//Define the pins
+#define BTN_SRT p5
+#define BTN_STP p6
+#define GRD_SNR p7
+#define TEM_SNR p8
+
+#define GRN_LED p9
+#define YEW_LED p10
+#define BLE_LED p11
+#define RED_LED p12
+
+//Define the input instances
+DigitalIn start_button(BTN_SRT);
+DigitalIn stop_button(BTN_STP);
+DigitalIn guard_sensor(GRD_SNR);
+DigitalIn tempe_sensor(TEM_SNR);
+//Define the output instances
+DigitalOut running_led(GRN_LED);
+DigitalOut ready_led(YEW_LED);
+DigitalOut guard_led(RED_LED);
+DigitalOut tempe_led(BLE_LED);
+
+
+int main()
+{
+    while(1) 
+    {
+        if(guard_sensor == 1 && tempe_sensor == 0 && stop_button == 0)
+        {
+            wait(0.1);
+            ready_led = 1;
+            if (start_button == 1)
+            {
+                wait(0.1);
+                running_led = 1;
+                while(guard_sensor == 1 && tempe_sensor == 0 && stop_button == 0)
+                {
+                    wait(0.1);
+                    if (guard_sensor == 0)
+                    {
+                        running_led = 0;
+                        guard_led = 1;
+                        wait(0.5);
+                        guard_led = 0;
+                    }
+                    else if (tempe_sensor == 1)
+                    {
+                        running_led = 0;
+                        tempe_led = 1;
+                        wait(0.5);
+                        tempe_led = 0;
+                    }
+                    else if (stop_button == 1)
+                    {
+                        running_led = 0;
+                    }
+                
+                }
+            }
+        }
+        else
+        {
+            running_led = 0;
+            ready_led =!  ready_led;
+            wait(0.5);
+        }
+    }
+}
+

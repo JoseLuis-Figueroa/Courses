@@ -1,0 +1,21 @@
+// The code below runs on an Mbed-enabled microcontroller. Output voltage range
+// is 3.3V
+
+#include "mbed.h"
+
+// configure pin as DAC
+AnalogOut Aout(p18);
+
+int main()
+{
+    while(1)
+    {
+        // Perform a sawtooth waveform of 50Hz(800us*25) and the maximum voltage
+        // value is 1.65V (0.5*3.3V)
+        for(float i=0.0; i<0.5; i+=0.02)
+        {
+            signal = i;
+            wait(0.0008);
+        }
+    }
+}

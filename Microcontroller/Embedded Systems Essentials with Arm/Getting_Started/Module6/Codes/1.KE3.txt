@@ -1,0 +1,27 @@
+#include "mbed.h"
+
+#define LED1 p9
+#define LED2 p10
+// Declare a Tincker object
+Ticker flipper;
+// Declare the digital outputs
+DigitalOut led1(LED1);
+DigitalOut led2(LED2);
+
+// Ticker function flip
+void flip()
+{
+    led2 = !led2;
+}
+
+int main() 
+{
+    led2 = 1;
+    // Attach function flip to the Tinker with a 2.0 seconds interval
+    flipper.attach(&flip, 2.0);
+    while (1) 
+    {
+        led1 = !led1;
+        wait(0.2);
+    }
+}
