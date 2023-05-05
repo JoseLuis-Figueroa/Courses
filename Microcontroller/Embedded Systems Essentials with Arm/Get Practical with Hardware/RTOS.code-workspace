@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "3.1.KV4_Thread"
+		},
+		{
+			"path": "3.2.KV4_Thre_Con"
+		},
+		{
+			"path": "3.3.KE4_Thr_Blink"
+		},
+		{
+			"name": "3.4.SV1_Thr_Lab",
+			"path": "3.4.SV1_Thr_Lab"
+		}
+	],
+	"settings": {}
+}

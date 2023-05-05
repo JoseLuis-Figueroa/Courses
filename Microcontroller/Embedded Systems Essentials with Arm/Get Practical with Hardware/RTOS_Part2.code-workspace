@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "4.1.KV1_Mutex"
+		},
+		{
+			"name": "4.2.KV1_Semaphore",
+			"path": "4.2.KV1_Semaphore"
+		},
+		{
+			"name": "4.3.KV1_Queues",
+			"path": "4.3.KV1_Queues"
+		},
+		{
+			"name": "4.4.KV2_Inte_RTOS",
+			"path": "4.4.KV2_Inte_RTOS"
+		},
+		{
+			"name": "4.5.SV1_Player",
+			"path": "4.5.SV1_Player"
+		},
+		{
+			"name": "4.6.FA4_Sem_Leds",
+			"path": "4.6.FA4_Sem_Leds"
+		},
+		{
+			"name": "4.7.FA4_SemMux",
+			"path": "4.7.FA4_SemMux"
+		}
+	],
+	"settings": {}
+}
