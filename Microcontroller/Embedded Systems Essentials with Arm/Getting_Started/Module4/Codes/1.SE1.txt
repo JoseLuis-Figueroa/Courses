@@ -1,0 +1,26 @@
+#include "mbed.h"
+
+#define BUTTON p5
+#define LED p10
+
+//Define interrupt instance
+InterruptIn button(BUTTON);
+//Define digital input
+DigitalOut led(LED);
+
+//Define ISRs for the interrupts
+void button_ISR()
+{
+    led = !led;
+}
+
+
+int main()
+{
+    //ISR function is called when rising edge occurs on the input
+    button.rise(&button_ISR);
+    while(1)
+    {
+        wait_ms(100);
+    }
+}

@@ -1,0 +1,74 @@
+#include "mbed.h"
+
+#define SPEAKER p21
+#define AIN1 p15
+#define AIN2 p16
+#define LED p5
+
+// Define the PWM speaker output
+PwmOut speaker(SPEAKER);
+// Define analog inputs
+AnalogIn level(AIN1);
+AnalogIn temp(AIN2);
+// Digital output
+DigitalOut led(LED);
+
+
+//Define variables
+float i, loval, hival;
+/*----------------------------------------------------------------------------
+ MAIN function
+ *----------------------------------------------------------------------------*/
+int main()
+{
+    while(1)
+    {
+        // Set a 0.5 duty cycle, which won't change
+        speaker = 0.5;
+        // Stay in this loop while tank level low
+        while(level.read() < 0.75)
+        {
+            led != led;
+            // Emit one cycle of warble
+            for(i=0; i<1; i+=0.5)
+            {
+                // Sweep starts f=100 to f=500
+                speaker.period(0.010-(0.008*i));
+                wait_ms(50);
+            }
+        }
+        
+        // Proceeding if tank level is good
+        led = 0;
+        // Temp too cold
+        if(temp.read() < 0.33)
+        {
+            // Set 200Hz as tone
+            hival = 0.005;
+            // No output wanted for 2nd tone, so set to (inaudible) 1Hz
+            loval = 1;
+        }
+        // Temp too high
+        if(temp.read() > 0.66)
+        {
+            // Set 1000Hz as upper tone
+            hival = 0.001;
+            // Set 200Hz as lower tone
+            loval = 0.005;
+        }
+        // Temp is right
+        if(temp.read() > 0.33 && temp.read() < 0.66)
+        {
+            // Set 500Hz as upper tone
+            hival = 0.002;
+            // Set 500Hz as lower tone
+            loval = 0.002;
+        }
+        
+        // Emit tones
+        speaker.period(hival);
+        wait_ms(500);
+        speaker.period(loval);
+        wait_ms(500);
+    }
+}

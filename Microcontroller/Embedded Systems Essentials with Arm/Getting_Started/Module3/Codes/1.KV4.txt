@@ -1,0 +1,27 @@
+#include "mbed.h"
+
+#define BUTTON p5
+#define LED p9
+
+// Define the Digital I/O
+DigitalIn mybutton(BUTTON);
+DigitalOut led(LED);
+
+int main()
+{
+    while(1)
+    {
+        // If the digital input is 1 (button pressed)
+        if (mybutton == 1)
+        {
+            // Digital output is assigned to 1
+            led = 1;
+        }
+        else
+        {
+            // Digital output is assigned to 0
+            led = 0;
+        }
+    wait_ms(100);
+    }
+}

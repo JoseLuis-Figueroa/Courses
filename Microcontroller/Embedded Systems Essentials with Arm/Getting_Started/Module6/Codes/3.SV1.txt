@@ -1,0 +1,17 @@
+#include "mbed.h"
+
+// Instance timer
+Timer t;
+
+int main() 
+{
+    while (1) 
+    {
+        // Write code below to start the timer
+        t.start();
+        printf("Hello World\n")
+        // Write code below to stop the timer
+        t.stop();
+        printf("The timer taken was %f seconds\n", t.read());
+    }
+}

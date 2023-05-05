@@ -1,0 +1,28 @@
+// The code below runs on an Mbed-enabled microcontroller. Output voltage range
+// is 3.3V
+
+#include "mbed.h"
+
+// configure pin as DAC
+AnalogOut Aout(p18);
+float i;
+
+int main()
+{
+    while (1)
+    {
+        // Rise signal with 40 steps (40ms)
+        for(i=0; i<0.8; i=i+0.02)
+        {
+            Aout = i;
+            wait(0.001);
+        }
+        
+        // Fall signal with 40 steps (80ms)
+        for(i=0.8; i>0; i=i-0.02)
+        {
+            Aout = i;
+            wait(0.002);
+        }
+    }
+}

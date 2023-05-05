@@ -1,0 +1,22 @@
+#include "mbed.h"
+
+#define LED1 p9
+#define LED2 p10
+#define LED3 p11
+#define LED4 p12
+
+//Define Output bus
+BusOut ledbus(LED1, LED2, LED3, LED4);
+
+int main()
+{
+    while(1)
+    {
+        //Show the digital value from 0 to 15
+        for(int i=0; i<16; i++)
+        {
+            ledbus = i;
+            wait(0.5);
+        }
+    }
+}

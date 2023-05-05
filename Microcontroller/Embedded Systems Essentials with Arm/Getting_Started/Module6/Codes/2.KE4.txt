@@ -1,0 +1,17 @@
+#include "mbed.h"
+
+// Declare PWM
+PwmOut led(p22);
+
+int main() 
+{
+    while (1) 
+    {
+        for(float p=0.0f; p<1.0f; p+=0.1f)
+        {
+            // Change the duty cycle with steps of 10%
+            led = p;
+            wait(0.1);
+        }
+    }
+}

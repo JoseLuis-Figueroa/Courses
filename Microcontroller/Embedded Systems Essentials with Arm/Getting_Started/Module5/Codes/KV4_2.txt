@@ -1,0 +1,22 @@
+// The microcontroller is know to be 12-bit, with a range of 0 to 3.3V
+#include "mbed.h"
+
+// Configure the p20 as ADC
+AnalogIn ain(p20);
+DigitalOut led(p5);
+
+int main()
+{
+    while(1)
+    {
+        // Led on when the In voltage is greater than 0.99V (3.3*0.3).
+        if(ain > 0.3)
+        {
+            led = 1;
+        }
+        else
+        {
+            led = 0;
+        }
+    }
+}
