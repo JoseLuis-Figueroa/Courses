@@ -11,6 +11,11 @@ This folder contains all the Arduino codes performed during the course. The cour
 - Robotics.
 - The Internet.
 - Internet of Things (IoT).
+
+This current tooling being used for this project includes:
+- Development Board: Arduino Mega 2060.
+- IDE/Debugger: Visual Studio Code (Arduino extension|PlatformIO Extension).
+- Compiler Toolchain: AVR-GCC.
  
 Notes: 
 - The codes before 107.sprint were performed using the Microsoft Arduino Extension. 
