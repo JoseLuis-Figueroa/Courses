@@ -6,6 +6,6 @@ This is a professional certificate program which is divided into the following c
 
 Each course includes documentation and all code produced during the program. The verified certificates can be found as well. The current tooling being used for this project includes:
 
-Development Board: Nucleo-F401RE.
-IDE/Debugger: Mbed API.
-Compiler Toolchain: GNU ARM.
+- Development Board: _Nucleo-F401RE._
+- IDE/Debugger: _Mbed API._
+- Compiler Toolchain: _GNU ARM._
