@@ -14,8 +14,8 @@ This folder contains all the embedded C codes performed during the course. The c
 
 The current tooling being used for this project includes:
 
-Development Board: Nucleo-F401RE.
-IDE/Debugger: Visual Studio Code (PlatformIO extension).
-Compiler Toolchain: GNU ARM.
+- Development Board: _Nucleo-F401RE._
+- IDE/Debugger: _Visual Studio Code (PlatformIO extension)._
+- Compiler Toolchain: _GNU ARM._
 
 Note: There are additional sections as the previous version of the course was added, but It does not make sense to add them.
