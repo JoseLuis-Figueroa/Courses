@@ -12,4 +12,10 @@ This folder contains all the embedded C codes performed during the course. The c
 9. Inter-Integrated Circuit (I2C).
 10. Serial Peripheral Interface (SPI).
 
-There are additional sections as the previous version of the course was added, but It does not make sense to add them.
+The current tooling being used for this project includes:
+
+Development Board: Nucleo-F401RE.
+IDE/Debugger: Visual Studio Code (PlatformIO extension).
+Compiler Toolchain: GNU ARM.
+
+Note: There are additional sections as the previous version of the course was added, but It does not make sense to add them.
