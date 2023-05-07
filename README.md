@@ -37,7 +37,7 @@ This Foundation course introduces the C programming language using STM32 Microco
 
 All the codes performed during the course and documentation can be found on the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Microcontroller%20Embedded%20C%20Programming%20Absolute%20Beginners).
 
-[3. Embedded Systems Bare-Metal Programming Ground Up (STM32)](https://www.udemy.com/course/embedded-systems-bare-metal-programming/)
+[3. Embedded Systems Bare-Metal Programming Ground Up (STM32).](https://www.udemy.com/course/embedded-systems-bare-metal-programming/)
 
 This course is designed to give you a solid foundation in bare-metal firmware development for  ARM-based microcontrollers. The goal of this course is to teach you how to navigate the microcontroller reference manual and datasheet to extract the right information to professionally build peripheral drivers and firmware. To achieve this goal, no libraries are used in this course, purely bare-metal embedded-c and register manipulations. Here is an overview of the course:
 - Analyze the chip documentation.
@@ -49,7 +49,7 @@ This course is designed to give you a solid foundation in bare-metal firmware de
 
 All the codes performed during the course can be found on the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Embedded%20Systems%20Bare-Metal%20Programming%20Ground%20Up).
 
-[4. Embedded Systems Essentials with ARM](https://www.edx.org/professional-certificate/armeducationx-embedded-systems-essentials?index=product&queryID=9a822647c8fd118217be98c817faccee&position=1&search_index=product&results_level=first-level-results&term=Embedded+Systems+Essentials+with+Arm&campaign=Embedded+Systems+Essentials+with+Arm&source=edX&product_category=professional-certificate&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch).
+[4. Embedded Systems Essentials with ARM.](https://www.edx.org/professional-certificate/armeducationx-embedded-systems-essentials?index=product&queryID=9a822647c8fd118217be98c817faccee&position=1&search_index=product&results_level=first-level-results&term=Embedded+Systems+Essentials+with+Arm&campaign=Embedded+Systems+Essentials+with+Arm&source=edX&product_category=professional-certificate&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch).
 
 The Arm EducationX Embedded Systems Essential Program provides the foundational skills required to begin on the world of embedded systems design and programming career. The course is made up of two parts:
 
@@ -70,3 +70,65 @@ The Arm EducationX Embedded Systems Essential Program provides the foundational 
   - Learn staged circuit development and troubleshooting skills.
   - Experience working with component data sheets to seek out and apply essential technical detail.
   - Gain a firm foundation to move towards more complex programming, distributed sensing and the IoT, through critical evaluation of systems developed.
+  
+**Control Version System (GIT).**
+
+This section is dedicated to showcasing the comprehensive collection of courses I have completed focused on version control systems, with a strong emphasis on GIT. By engaging in these courses, I have acquired extensive expertise in various essential aspects of Git, encompassing branching strategies, merging techniques, tagging practices, and rebasing methodologies. The version control system courses are conveniently categorized into the following sections:
+
+[1. Git Essential Training: The Basics.](https://www.linkedin.com/learning/certificates/455196b80240ab08f2c18b3398ef34d9d261c7216a0aeb8771677edb801cb461?u=2101433)
+
+Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project. This course delves into the fundamental concepts underpinning version control systems and the Git architecture. Throughout the course:
+- Explain how to initialize a repository and commit changes to it.
+- Describe best practices for making commits in Git.
+- Differentiate between the three trees in the Git architecture.
+- Assess the effect of making changes to documents in a repository.
+- Analyze the Git repository’s index of changes.
+- Analyze Git features for ignoring files and directories.
+
+As part of this course, a dedicated GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), has been created, providing a practical environment for hands-on learning and experimentation. 
+
+[2. Git: Branches, Merges, and Remotes.](https://www.linkedin.com/learning/certificates/de3899fdde2ef3f918b221381465aa251614bf91798267eb9e1cfb00b7c52648?u=2101433)
+
+The course explains how to use branching, merging, and remote commands for change tracking and collaboration. Learn to navigate the commit tree and review the log to find specific commits. Throughtout the course:
+- Finding and viewing commits.
+- Creating and switching branches.
+- Comparing branches.
+- Resetting branches.
+- Merging branches.
+- Stashing uncommitted changes.
+- Setting up a remote repository.
+- Creating remote branches.
+- Fetching and pushing changes to a remote.
+- Enabling remote collaboration.
+
+This course also use the previous GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), saving the previous work and providing a practical enviroment for hands-on learning and experimentation.
+
+[3. GIT Intermediate Techniques.](https://www.linkedin.com/learning/certificates/5d83819419e0b301588e9a17c24ff8d1f7e47e83e847f73448facd560705165b?u=2101433)
+
+Enhance your Git skillset, and explore intermediate techniques and concepts that can help you work more efficiently with the popular open-source version control software. The course shares branch management techniques, like deleting and pruning, and how to use tags to mark important points in the branch history. Learn to use interactive staging to stage small portions of a file, cherry-picking to share commits between branches, patches to share commits with others, and techniques for tracking down problems in your project. Throughout the course:
+- Deleting and pruning branches.
+- Working with tags.
+- Interactive staging.
+- Cherry-picking commits.
+- Creating and applying patches.
+- Rebasing commits.
+- Squashing commits.
+- Tracking down problems with blame and bisect.
+
+As part of this course, a dedicated GitLab repository, [demo repo](https://gitlab.com/git376/demo_repo), has been created, providing a practical environment for hands-on learning and experimentation. 
+
+[4. Learning GitLab.](https://www.linkedin.com/learning/certificates/987d6eea263526821c290b6aacc75cd96bca3dae47340b9a7cd8d8b9251fd050?u=2101433)
+
+This course covers how to set up a GitLab project, edit files, and leverage key features to collaborate more effectively with your teammates. Learn how to use the basic GitLab editor to make changes to a file, create branch and merge requests, and interpret the Git commit history. See how to use key collaboration features, including Todos, milestones, and issues, a built-in ticketing system for tracking work on your projects. Throughout the course:
+- Managing files with version control
+- The basics of Markdown
+- Creating a GitLab project
+- Using the GitLab editor
+- Staging and committing in the web IDE
+- Tags, releases, and history
+- Using the collaboration features in GitLab
+
+[5. GitLab Certified Git Associate.](https://www.credly.com/badges/d172453e-0f56-49d8-9db9-709637075938/public_url)
+
+GitLab Certified Git Associate is a technical certification offered by GitLab Professional Services to help the GitLab community and team members validate their ability to apply GitLab in their daily DevOps work. To earn a certification, candidates must first pass a 1-hour written assessment, followed by a 2-hour hands-on lab assessment graded by GitLab Professional Services engineers.
+
