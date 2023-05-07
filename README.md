@@ -86,3 +86,19 @@ Learn how to use Git, the popular open-source version control software, to manag
 - Analyze Git features for ignoring files and directories.
 
 As part of this course, a dedicated GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), has been created, providing a practical environment for hands-on learning and experimentation. 
+
+[2. Git: Branches, Merges, and Remotes](https://www.linkedin.com/learning/certificates/de3899fdde2ef3f918b221381465aa251614bf91798267eb9e1cfb00b7c52648?u=2101433)
+
+The course explains how to use branching, merging, and remote commands for change tracking and collaboration. Learn to navigate the commit tree and review the log to find specific commits. Throughtout the course:
+- Finding and viewing commits
+- Creating and switching branches
+- Comparing branches
+- Resetting branches
+- Merging branches
+- Stashing uncommitted changes
+- Setting up a remote repository
+- Creating remote branches
+- Fetching and pushing changes to a remote
+- Enabling remote collaboration
+
+This course also use the previous GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), saving the previous work and providing a practical enviroment for hands-on learning and experimentation.
