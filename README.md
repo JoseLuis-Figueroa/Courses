@@ -70,3 +70,19 @@ The Arm EducationX Embedded Systems Essential Program provides the foundational 
   - Learn staged circuit development and troubleshooting skills.
   - Experience working with component data sheets to seek out and apply essential technical detail.
   - Gain a firm foundation to move towards more complex programming, distributed sensing and the IoT, through critical evaluation of systems developed.
+  
+**Control Version System (GIT).**
+
+This section is dedicated to showcasing the comprehensive collection of courses I have completed focused on version control systems, with a strong emphasis on GIT. By engaging in these courses, I have acquired extensive expertise in various essential aspects of Git, encompassing branching strategies, merging techniques, tagging practices, and rebasing methodologies. The version control system courses are conveniently categorized into the following sections:
+
+[1. Git Essential Training: The Basics](https://www.linkedin.com/learning/certificates/455196b80240ab08f2c18b3398ef34d9d261c7216a0aeb8771677edb801cb461?u=2101433)
+
+Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project. This course delves into the fundamental concepts underpinning version control systems and the Git architecture. Throughout the course:
+- Explain how to initialize a repository and commit changes to it.
+- Describe best practices for making commits in Git.
+- Differentiate between the three trees in the Git architecture.
+- Assess the effect of making changes to documents in a repository.
+- Analyze the Git repository’s index of changes.
+- Analyze Git features for ignoring files and directories.
+
+As part of this course, a dedicated GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), has been created, providing a practical environment for hands-on learning and experimentation. 
