@@ -1,6 +1,6 @@
 # Embedded Software Development Courses.
 
-Welcome to my repository of _"embedded software development courses"_. This collection contains a comprehensive set of courses I have completed to sharpen my skills and knowledge in the field of embedded software development. These courses showcase my ability to master new technologies and programming languages quickly and effectively, while also highlighting my strong attention to detail and commitment to producing high-quality work. The courses are divided into two groups: Firmware Development and Control Version System (GIT).
+Welcome to my repository of _"embedded software development courses"_. This collection contains a comprehensive set of courses I have completed to sharpen my skills and knowledge in the field of embedded software development. These courses showcase my ability to master new technologies and programming languages quickly and effectively, while also highlighting my strong attention to detail and commitment to producing high-quality work. The courses are divided into two groups: Firmware Development (Microcontroller) and Control Version System (GIT).
 
 **Firmware Development (Microcontroller).**
 
@@ -10,7 +10,7 @@ The firmware development courses are divided into:
 [1. Arduino Programming and Hardware Fundamentals with Hackster.](https://www.udemy.com/course/arduino-programming-and-hardware-fundamentals-with-hackster/)
 
 Learn the Arduino platform and programming language to create a wide range of projects, from robots and interactive art displays to home automation tools and much more. Throughout the course:
-- Master the fundamentals of Arduino programming with C/C++.
+- Learn the fundamentals of Arduino programming with C/C++.
 - Build functioning circuits on a breadboard.
 - Write programs that perform basic math, light up LEDs, and control motors.
 - Control sensors, robots, and Internet of Things (IoT) devices using Arduino.
@@ -85,8 +85,6 @@ Learn how to use Git, the popular open-source version control software, to manag
 - Analyze the Git repository’s index of changes.
 - Analyze Git features for ignoring files and directories.
 
-As part of this course, a dedicated GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), has been created, providing a practical environment for hands-on learning and experimentation. 
-
 [2. Git: Branches, Merges, and Remotes.](https://www.linkedin.com/learning/certificates/de3899fdde2ef3f918b221381465aa251614bf91798267eb9e1cfb00b7c52648?u=2101433)
 
 The course explains how to use branching, merging, and remote commands for change tracking and collaboration. Learn to navigate the commit tree and review the log to find specific commits. Throughout the course
@@ -101,8 +99,6 @@ The course explains how to use branching, merging, and remote commands for chang
 - Fetching and pushing changes to a remote.
 - Enabling remote collaboration.
 
-This course also use the previous GitLab repository, [Explore California](https://gitlab.com/git376/explore_california), saving the previous work and providing a practical enviroment for hands-on learning and experimentation.
-
 [3. GIT Intermediate Techniques.](https://www.linkedin.com/learning/certificates/5d83819419e0b301588e9a17c24ff8d1f7e47e83e847f73448facd560705165b?u=2101433)
 
 Enhance your Git skillset, and explore intermediate techniques and concepts that can help you work more efficiently with the popular open-source version control software. The course shares branch management techniques, like deleting and pruning, and how to use tags to mark important points in the branch history. Learn to use interactive staging to stage small portions of a file, cherry-picking to share commits between branches, patches to share commits with others, and techniques for tracking down problems in your project. Throughout the course:
@@ -114,8 +110,6 @@ Enhance your Git skillset, and explore intermediate techniques and concepts that
 - Rebasing commits.
 - Squashing commits.
 - Tracking down problems with blame and bisect.
-
-As part of this course, a dedicated GitLab repository, [demo repo](https://gitlab.com/git376/demo_repo), has been created, providing a practical environment for hands-on learning and experimentation. 
 
 [4. Learning GitLab.](https://www.linkedin.com/learning/certificates/987d6eea263526821c290b6aacc75cd96bca3dae47340b9a7cd8d8b9251fd050?u=2101433)
 
