@@ -2,7 +2,7 @@
 
 Welcome to my repository of _"embedded software development courses"_. This collection contains a comprehensive set of courses I have completed to sharpen my skills and knowledge in the field of embedded software development. These courses showcase my ability to master new technologies and programming languages quickly and effectively, while also highlighting my strong attention to detail and commitment to producing high-quality work. The courses are divided into two groups: Firmware Development and Control Version System (GIT).
 
-**Firmware Development.**
+**Firmware Development (Microcontroller).**
 
 This section provides information on all the courses I've taken related to embedded systems. Through these courses, I've gained experience in various aspects of embedded systems, including firmware development, microcontroller programming, and embedded software design. 
 The firmware development courses are divided into:
