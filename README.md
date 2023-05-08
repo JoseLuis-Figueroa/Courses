@@ -17,11 +17,11 @@ Learn the Arduino platform and programming language to create a wide range of pr
 - Remotely log data to an Internet of Things (IoT) platform.
 - Design circuits and write code for your project.
 
-All the codes performed during the course and documentation can be found on the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Arduino%20Programming%20and%20Hardware%20Fundamentals%20with%20Hackster).
+All the codes performed during the course and documentation can be found in the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Arduino%20Programming%20and%20Hardware%20Fundamentals%20with%20Hackster).
 
 [2. Microcontroller Embedded C Programming: Absolute Beginners.](https://www.udemy.com/course/microcontroller-embedded-c-programming/)
 
-This Foundation course introduces the C programming language using STM32 Microcontroller as the platform for learning. The course is specifically designed to provide a solid foundation for working with embedded systems using C programming language (embedded C). The course provide a comprehensive understanding of the fundamentals of embedded C:
+This Foundation course introduces the C programming language using STM32 Microcontroller as the platform for learning. The course is specifically designed to provide a solid foundation for working with embedded systems using C programming language (embedded C). The course provides a comprehensive understanding of the fundamentals of embedded C:
 - Importance of bitwise operators.
 - Usage of bit manipulation techniques to program MCU peripheral registers.
 - Accessing memory-mapped registers using pointers.
@@ -35,7 +35,7 @@ This Foundation course introduces the C programming language using STM32 Microco
 - MCU internal architecture and programming peripherals.
 - Interfacing projects.
 
-All the codes performed during the course and documentation can be found on the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Microcontroller%20Embedded%20C%20Programming%20Absolute%20Beginners).
+All the codes performed during the course and documentation can be found in the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Microcontroller%20Embedded%20C%20Programming%20Absolute%20Beginners).
 
 [3. Embedded Systems Bare-Metal Programming Ground Up (STM32).](https://www.udemy.com/course/embedded-systems-bare-metal-programming/)
 
@@ -45,7 +45,7 @@ This course is designed to give you a solid foundation in bare-metal firmware de
 - Create registers from the address.
 - Understand Cortex-Microcontroller Interface Standard (CMSIS).
 - Use the debugger effectively to analyze and resolve any bugs.
-- Deep understanding on developing peripheral/drivers.
+- Deep understanding of developing peripheral/drivers.
 
 All the codes performed during the course can be found on the [course folder](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Embedded%20Systems%20Bare-Metal%20Programming%20Ground%20Up).
 
@@ -60,16 +60,16 @@ The Arm EducationX Embedded Systems Essential Program provides the foundational 
   - Understand applications of embedded systems and how a modern API can help accelerate IoT deployment.
   
  [B. Get Practical with Hardware:](https://github.com/JoseLuis-Figueroa/Courses/tree/main/Microcontroller/Embedded%20Systems%20Essentials%20with%20Arm/Get%20Practical%20with%20Hardware) build upon the knowledge acquired in the first course and combine this with new foundational skills focusing on Real-Time Operating Systems (RTOS) and Serial Communication to Arm Cortex-M microcontrollers. Make practical laboratory exercises using the popular and affordable ST Nucleo F401RE board, to obtain real-world experience in implementing these key concepts. Throughout the course:
-  - Learn key serial communication protocols used in the embedded environment including SPI, UARTs and I2C; evaluating their benefits and limitations.
+  - Learn key serial communication protocols used in the embedded environment including SPI, UARTs, and I2C; evaluating their benefits and limitations.
   - Learn the features of a Real-time Operating System (RTOS) and how it facilitates multitasking in an embedded system.
-  - Develop working embedded prototypes using the Arm Mbed API, the ST Nucleo F401RE board and low cost parts.
+  - Develop working embedded prototypes using the Arm Mbed API, the ST Nucleo F401RE board, and low-cost parts.
   - Learn hardware and software theory, immediately applied in practice.
   - Apply your knowledge to create a user interface, temperature sensing system, and music player - with ideas to develop each further.
-  - Apply threads, mutex, semaphores and interrupts to write a fully-functioning multitasking program.
-  - Learn deeper programming skills with C/C++, applying these to use of the powerful Mbed API.
+  - Apply threads, mutex, semaphores, and interrupts to write a fully-functioning multitasking program.
+  - Learn deeper programming skills with C/C++, applying these to the use of the powerful Mbed API.
   - Learn staged circuit development and troubleshooting skills.
   - Experience working with component data sheets to seek out and apply essential technical detail.
-  - Gain a firm foundation to move towards more complex programming, distributed sensing and the IoT, through critical evaluation of systems developed.
+  - Gain a firm foundation to move towards more complex programming, distributed sensing, and the IoT, through critical evaluation of systems developed.
   
 **Control Version System (GIT).**
 
@@ -77,7 +77,7 @@ This section is dedicated to showcasing the comprehensive collection of courses 
 
 [1. Git Essential Training: The Basics.](https://www.linkedin.com/learning/certificates/455196b80240ab08f2c18b3398ef34d9d261c7216a0aeb8771677edb801cb461?u=2101433)
 
-Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project. This course delves into the fundamental concepts underpinning version control systems and the Git architecture. Throughout the course:
+Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project. This course delves into the fundamental concepts underpinning version control systems and Git architecture. Throughout the course:
 - Explain how to initialize a repository and commit changes to it.
 - Describe best practices for making commits in Git.
 - Differentiate between the three trees in the Git architecture.
@@ -89,7 +89,7 @@ As part of this course, a dedicated GitLab repository, [Explore California](http
 
 [2. Git: Branches, Merges, and Remotes.](https://www.linkedin.com/learning/certificates/de3899fdde2ef3f918b221381465aa251614bf91798267eb9e1cfb00b7c52648?u=2101433)
 
-The course explains how to use branching, merging, and remote commands for change tracking and collaboration. Learn to navigate the commit tree and review the log to find specific commits. Throughtout the course:
+The course explains how to use branching, merging, and remote commands for change tracking and collaboration. Learn to navigate the commit tree and review the log to find specific commits. Throughout the course
 - Finding and viewing commits.
 - Creating and switching branches.
 - Comparing branches.
@@ -130,5 +130,8 @@ This course covers how to set up a GitLab project, edit files, and leverage key 
 
 [5. GitLab Certified Git Associate.](https://www.credly.com/badges/d172453e-0f56-49d8-9db9-709637075938/public_url)
 
-GitLab Certified Git Associate is a technical certification offered by GitLab Professional Services to help the GitLab community and team members validate their ability to apply GitLab in their daily DevOps work. To earn a certification, candidates must first pass a 1-hour written assessment, followed by a 2-hour hands-on lab assessment graded by GitLab Professional Services engineers.
+GitLab Certified Git Associate is a technical certification offered by GitLab Professional Services to help the GitLab community and team members validate their ability to apply GitLab in their daily DevOps work. To earn certification, candidates must first pass a 1-hour written assessment, followed by a 2-hour hands-on lab assessment graded by GitLab Professional Services engineers.
+
+
+All the Certificates of completion of all the courses of the Control Version System (GIT) can be found on the [folder](https://github.com/JoseLuis-Figueroa/Courses/tree/GIT/Control_Version_System).
 
